@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8080/api/cassettes/all')
+    fetch('https://video-rental-backend.herokuapp.com/api/cassettes/all')
       .then(response => response.json())
       .then(data => {
         console.log(data);
